@@ -10420,7 +10420,7 @@ if (Vel) {
     this.spanMinutes.click($.proxy(this.toggleView, this, 'minutes'));
 
     // Show or toggle
-    input.on('focus.clockpicker click.clockpicker', $.proxy(this.show, this));
+    //input.on('focus.clockpicker click.clockpicker', $.proxy(this.show, this));
 
     // Build ticks
     var tickTpl = $('<div class="clockpicker-tick"></div>'),
