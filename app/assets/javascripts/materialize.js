@@ -10420,7 +10420,7 @@ if (Vel) {
     this.spanMinutes.click($.proxy(this.toggleView, this, 'minutes'));
 
     // Show or toggle
-    //input.on('focus.clockpicker click.clockpicker', $.proxy(this.show, this));
+    input.on('focus.clockpicker click.clockpicker', $.proxy(this.show, this));
 
     // Build ticks
     var tickTpl = $('<div class="clockpicker-tick"></div>'),
@@ -10690,12 +10690,12 @@ if (Vel) {
     this.locate();
     this.isShown = true;
     // Hide when clicking or tabbing on any element except the clock and input
-    $doc.on('click.clockpicker.' + this.id + ' focusin.clockpicker.' + this.id, function (e) {
+    /** $doc.on('click.clockpicker.' + this.id + ' focusin.clockpicker.' + this.id, function (e) {
       var target = $(e.target);
       if (target.closest(self.popover.find('.picker__wrap')).length === 0 && target.closest(self.input).length === 0) {
         self.hide();
       }
-    });
+    }); */
     // Hide when ESC is pressed
     $doc.on('keyup.clockpicker.' + this.id, function (e) {
       if (e.keyCode === 27) {
