@@ -10695,7 +10695,7 @@ if (Vel) {
       if (target.closest(self.popover.find('.picker__wrap')).length === 0 && target.closest(self.input).length === 0) {
         self.hide();
       }
-    }); 
+    });
     // Hide when ESC is pressed
     $doc.on('keyup.clockpicker.' + this.id, function (e) {
       if (e.keyCode === 27) {
