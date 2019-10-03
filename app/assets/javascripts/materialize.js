@@ -4236,7 +4236,7 @@ if (Vel) {
 				// Add click close handler to document
 				setTimeout(function() {
 					$(document).on("click." + activates.attr("id"), function(e) {
-						//hideDropdown();
+						hideDropdown();
 						$(document).off("click." + activates.attr("id"));
 					});
 				}, 100);
@@ -10247,7 +10247,7 @@ if (Vel) {
 										) {
 											// If the target was the holder that covers the screen,
 											// keep the element focused to maintain tabindex.
-											//P.close(target === P.$root.children()[0]);
+											P.close(target === P.$root.children()[0]);
 										}
 									},
 									0,
