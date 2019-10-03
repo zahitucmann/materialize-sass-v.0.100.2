@@ -6603,7 +6603,9 @@ if (Vel) {
 				closeOnClick: false,
 				draggable: true,
 				onOpen: null,
-				onClose: null
+				onClose: function () {
+					$(document.activeElement).blur();
+				}
 			};
 			options = $.extend(defaults, options);
 
